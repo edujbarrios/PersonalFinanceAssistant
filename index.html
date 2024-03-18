@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Finanzas Personales</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Finanzas Personales</h1>
+        </header>
+        <section class="ingresos">
+            <h2>Ingresos</h2>
+            <form id="form-ingresos">
+                <input type="text" id="descripcion-ingreso" placeholder="Descripción" required>
+                <input type="text" id="cantidad-ingreso" placeholder="Cantidad" required pattern="^\d+(\.\d{1,2})?$">
+                <button type="submit">Añadir Ingreso</button>
+            </form>
+            <ul id="lista-ingresos"></ul>
+        </section>
+        <section class="gastos">
+            <h2>Gastos</h2>
+            <form id="form-gastos">
+                <input type="text" id="descripcion-gasto" placeholder="Descripción" required>
+                <input type="text" id="cantidad-gasto" placeholder="Cantidad" required pattern="^\d+(\.\d{1,2})?$">
+                <button type="submit">Añadir Gasto</button>
+            </form>
+            <ul id="lista-gastos"></ul>
+        </section>
+        <section class="total">
+            <h2>Total</h2>
+            <p id="total">0</p>
+        </section>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
